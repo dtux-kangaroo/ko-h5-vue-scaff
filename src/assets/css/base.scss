@@ -1,0 +1,8 @@
+// 去掉点击链接和文本框对象的半透明覆盖（iOS）或者虚框（Android）
+a, button, input, optgroup, select, textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+// 消除原生外观，在iOS手机端加上这个属性才能给按钮和输入框自定义样式
+input, textarea {
+  -webkit-appearance: none;
+}

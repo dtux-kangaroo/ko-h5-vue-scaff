@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- 页面窗口自动调整到设备宽度，并禁止用户缩放页面 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <!-- 编码格式 -->
+    <meta charset="UTF-8">
+    <!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>   
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit">
+    <!-- UC强制全屏 -->
+    <meta name=”full-screen” content=”yes”>              
+    <!-- 忽略将页面中的数字识别为电话号码 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 忽略 android 平台对邮箱的识别 -->
+    <meta name="format-detection" content="email=no">
+    <!-- 添加到主屏幕后，会全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!-- 当网站添加到主屏幕快速启动方式，可隐藏地址栏，进针对ios的safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式 -->
+    <!-- 可选default、black、black-translucent -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 页面描述 -->
+    <meta name="description" content="不超过150个字符"/>  
+    <!-- 页面关键词，多个关键词用逗号分隔 -->
+    <meta name="keywords" content=""/>      
+    <!-- 需要在网站的根目录下存放favicon图标，防止404请求 -->
+    <link rel="shortcut icon" href="./img/404.jpeg">
+    <title>首页</title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
